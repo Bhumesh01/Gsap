@@ -1,4 +1,4 @@
-.card{
+#card1{
     width: 250px;
     height: 250px;
     background: linear-gradient(135deg, #1dd1a1, #54a0ff);
@@ -6,5 +6,18 @@
     box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     opacity: 1;
     transform: scale(0.8);
-    margin-top: 50px;
+    margin-top: 10px;
+}
+#card2{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #3bd11d, #ddff1e);
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    opacity: 1;
+    transform: scale(0.8);
+    margin-top: 20px;
+}
+body{
+    background-color: black;
 }

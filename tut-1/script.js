@@ -1,10 +1,10 @@
-// entrance animation
-gsap.to(".card", {
+// First Animation 
+gsap.to("#card1", {
   opacity: 1,
   duration: 5,
   scale: 1,
   onComplete: ()=>{
-    gsap.to('.card', {
+    gsap.to('#card1', {
       y: -20,
       repeat: -1,
       yoyo: true,
@@ -12,3 +12,10 @@ gsap.to(".card", {
     })
   }
 });
+// Second Animation
+gsap.to("#card2", {
+  skewX: 15,
+  repeat: -1,
+  yoyo: true,
+  duration: 5,
+})

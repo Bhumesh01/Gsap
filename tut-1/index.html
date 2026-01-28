@@ -6,8 +6,18 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div>
-            <div class="card"></div>
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 10px;color: white; font-weight: 400;">
+            <h2 style="text-decoration: underline;">First Animation</h2>
+            <ul>
+                <li>repeat: -1; is used to perform infinite animation</li>
+                <li>yoyo: true; is used to move the item back to its original position after animation has ended (used if repeat != 0 as this back and forth movement will only be display if repeat is set to value other than 0)</li>
+                <li>onComplete is the function that is performed when the animation has been completed</li>
+                <li>x:val, y:val is used to move the object back(-ve x), forth(+ve x) and  top(-ve y) and bottom(+ve y)</li>
+                <li>Scale is used to transform the size of the object if scale>1 object size increases and if scale<1 object size decreases)</li>
+            </ul>
+            <div id="card1"></div>
+            <h2 style="text-decoration: underline;">Second Animation</h2>
+            <div id="card2"></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
         <script type="module" src="./script.js"></script>
