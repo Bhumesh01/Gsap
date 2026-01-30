@@ -1,0 +1,33 @@
+.box{
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #6366f1, #a78bfa);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(66, 102, 241, 0.5);
+  opacity: 0;
+  transform: scale(0.5);
+  margin: 60px;
+}
+button{
+  padding: 10px 20px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 600;
+}
+button:hover{
+  background-color: #6365f19a;
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#info{
+  color: white;
+  font-size: large;
+  margin-top: 15px;
+}
