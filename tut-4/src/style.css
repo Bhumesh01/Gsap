@@ -27,9 +27,6 @@
   cursor: pointer;
 }
 
-.scroll-to-top:hover{
-  background-color: #6365f19a;
-}
 
 .scroll-to-top img{
   width: 60%;
