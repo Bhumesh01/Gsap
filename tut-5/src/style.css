@@ -1,0 +1,36 @@
+#app{
+  width: 700px;
+  height: 500px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  display: flex;
+  padding-left: 20px;
+  justify-content: start;
+  align-items: end;
+  gap: 50px;
+}
+#tag{
+  width: 700px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 50px;
+}
+.bar{
+  width: 70px;
+  background: linear-gradient(135deg, #6366f1, #a78bfa);
+  transform-origin: bottom; 
+  transform: scaleY(0);
+}
+body{
+  background-color: black;
+}
+.label{
+  margin-top: 5px;
+  width: 70px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+}
