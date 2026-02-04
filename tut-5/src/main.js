@@ -40,7 +40,7 @@ btn.addEventListener('click', ()=>{
 
 const fab = document.querySelector(".fab");
 const children = document.querySelectorAll(".fab-child");
-const radius = 100;
+const radius = 150;
 let expanded = false;
 fab.addEventListener("click", ()=>{
   expanded = !expanded;
@@ -56,7 +56,9 @@ fab.addEventListener("click", ()=>{
         x: x,
         y: y,
         opacity: 1,
-
+        rotate: 360,
+        duration: 0.5,
+        ease: "expo.out"
       })
       })
   }
@@ -65,7 +67,12 @@ fab.addEventListener("click", ()=>{
       gsap.to(child, {
         x:0,
         y:0,
-        opacity: 0
+        opacity: 0,
+        scale: 0.8,
+        rotate: 0,
+        duration: 0.3,
+        ease: 'power1.in',
+        pointerEvents: 'none'
       })
     })
   }
