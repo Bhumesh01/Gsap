@@ -37,3 +37,36 @@ renderBars();
 btn.addEventListener('click', ()=>{
   renderBars();
 })
+
+const fab = document.querySelector(".fab");
+const children = document.querySelectorAll(".fab-child");
+const radius = 100;
+let expanded = false;
+fab.addEventListener("click", ()=>{
+  expanded = !expanded;
+  fab.textContent = expanded?"x":"+";
+  if(expanded){
+    const arcSpan = Math.PI/1.5;
+    const startingAngle = Math.PI/2 + arcSpan/2;
+    children.forEach((child, i)=>{
+      const angle = startingAngle - i*(arcSpan/(children.length-1));
+      const x = Math.cos(angle)*radius;
+      const y = -Math.sin(angle)*radius;
+      gsap.to(child, {
+        x: x,
+        y: y,
+        opacity: 1,
+
+      })
+      })
+  }
+  else{
+    children.forEach((child)=>{
+      gsap.to(child, {
+        x:0,
+        y:0,
+        opacity: 0
+      })
+    })
+  }
+})

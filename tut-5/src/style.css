@@ -34,3 +34,44 @@ body{
   color: white;
   opacity: 0;
 }
+.fab-container {
+  margin-top: 15px;
+  position: fixed;
+  right: 50vw;
+  width: 60px;
+  height: 60px;
+}
+
+.fab,
+.fab-child {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fab {
+  background-color: #0984e3;
+  position: relative;
+  z-index: 2;
+}
+
+.fab-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fab-child:nth-child(1) { background-color: #00b894; }
+.fab-child:nth-child(2) { background-color: #fd79a8; }
+.fab-child:nth-child(3) { background-color: #e17055; }
