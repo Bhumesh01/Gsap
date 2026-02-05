@@ -77,3 +77,13 @@ fab.addEventListener("click", ()=>{
     })
   }
 })
+gsap.from('.card', {
+  opacity: 0,
+  y: 60,
+  duration: 0.6,
+  delay: 0.2,
+  ease: 'power4.out',
+  scale: 0.95,
+  stagger: 0.2
+  // stagger will add delay in start time of animations creating cascading like effect
+})
