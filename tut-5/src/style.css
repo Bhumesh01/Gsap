@@ -76,3 +76,15 @@ body{
 .fab-child:nth-child(1) { background-color: #00b894; }
 .fab-child:nth-child(2) { background-color: #fd79a8; }
 .fab-child:nth-child(3) { background-color: #e17055; }
+.cards div{
+  height: 150px;
+  width: 300px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 20px;
+}
