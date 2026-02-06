@@ -1,0 +1,17 @@
+body{
+  background-color: black;
+}
+#app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100vh;
+}
+.pulse{
+  background: linear-gradient(135deg, #1498cc, #7d2faa);
+  width: 20px;
+  height: 150px;
+  border-radius: 50px;
+  opacity: 0.8;
+}
