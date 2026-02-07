@@ -1,9 +1,11 @@
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 function App() {
-  
   return (
-    <>
-      Welcome
-    </>
+    <div className='flex-center text-3xl font-bold text-center'>
+      Welcome 
+    </div>
   )
 }
 
