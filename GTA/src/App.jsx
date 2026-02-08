@@ -1,11 +1,14 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import Hero from './sections/Hero';
+import NavBar from './sections/NavBAr';
 gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
-    <div className='flex-center text-3xl font-bold text-center'>
-      Welcome 
-    </div>
+    <main>
+      <NavBar></NavBar>
+      <Hero></Hero>
+    </main>
   )
 }
 
