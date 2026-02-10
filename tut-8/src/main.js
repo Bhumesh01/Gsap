@@ -3,23 +3,32 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 gsap.to('.a', {
-  scrollTrigger: '.a',
+  scrollTrigger:{
+    trigger: '.a',
+    toggleActions: "restart pause resume reset"
+  },
   x: 700,
   rotate: 360,
-  duration: 2,
-  ease: 'expo'
+  duration: 3,
+  ease: 'bounce',
 })
 gsap.to('.b', {
-  scrollTrigger: '.b',
+  scrollTrigger:{
+    trigger: '.b',
+    toggleActions: "restart pause resume reset"
+  },
   x: 700,
   rotate: 360,
-  duration: 2,
-  ease: 'expo'
+  duration: 3,
+  ease: 'bounce'
 })
 gsap.to('.c', {
-  scrollTrigger: '.c',
+  scrollTrigger:{
+    trigger: '.c',
+    toggleActions: "restart pause resume reset"
+  },
   x: 700,
   rotate: 360,
-  duration: 2,
-  ease: 'expo'
+  duration: 3,
+  ease: 'bounce'
 })
