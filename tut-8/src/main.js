@@ -5,6 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to('.a', {
   scrollTrigger:{
     trigger: '.a',
+    start: 'top center',
+    end: 'bottom 100',
+    markers: true,
     toggleActions: "restart pause resume reset"
   },
   x: 700,
@@ -15,6 +18,9 @@ gsap.to('.a', {
 gsap.to('.b', {
   scrollTrigger:{
     trigger: '.b',
+    start: 'top center',
+    end: 'bottom 100',
+    markers: true,
     toggleActions: "restart pause resume reset"
   },
   x: 700,
@@ -25,6 +31,9 @@ gsap.to('.b', {
 gsap.to('.c', {
   scrollTrigger:{
     trigger: '.c',
+    start: 'top center',
+    end: ()=>"+="+document.querySelector('.c').offsetWidth,
+    markers: true,
     toggleActions: "restart pause resume reset"
   },
   x: 700,
